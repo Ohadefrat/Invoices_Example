@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Invoice {\n  constructor() {\n    this.date = \"\";\n    this.Statuses = \"\";\n    this.Amount = \"\";\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,20 @@
+<div *ngIf="invoice">
+    <h2>{{invoice.name}}</h2>
+    <div>
+        date:
+        <input [(ngModel)]="invoice.date" placeholder="date">
+    </div>
+    <div>
+        Statuses:
+        <input [(ngModel)]="invoice.statuses" placeholder="Statuses">
+    </div>
+    <div>
+        Amount:
+        <input [(ngModel)]="invoice.amount" placeholder="Amount">
+    </div>
+    <button (click)="UpdateInvoice(invoice)" *ngIf="invoice.id">Save</button>
+    <button (click)="DeleteInvoice(invoice)" *ngIf="invoice.id">Delete</button>
+    <button (click)="CreateInvoice(invoice)" *ngIf="!invoice.id">Create</button>
+
+
+</div>
